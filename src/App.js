@@ -1,25 +1,37 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.css'
+import { useState } from 'react'
 
 function App() {
+
+  const [search, setSearch] = useState({ search: '' })
+  const items = ['hola', 'esto', 'es', 'una', 'prueba', 'para', 'michelada', '.io']
+
+  const lookForText = e => {
+    let text = e.target.value
+    if (text === '') setSearch({ search: '' })
+    else {
+      let plainSearch = text.toLowerCase().trim()
+      let validSearch = items.filter(item => item.indexOf(plainSearch) !== -1)
+      setSearch({
+        search: text,
+        match: validSearch.length > 0 ? validSearch : ['No hay ningún item ;((']
+      })
+    }
+  }
+
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div>
+        <h1>
+          🎉 Testing List with <code> React </code> 🎉
+        </h1>
+        <input type="text" value={search.search} onChange={lookForText} placeholder='Search' />
+        <ul>
+          {search?.match?.map(item => <li>{item}</li>) ?? items.map(item => <li>{item}</li>)}
+        </ul>
+      </div>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
