@@ -10,7 +10,7 @@ function App() {
     let text = e.target.value
     if (text === '') setSearch({ search: '' })
     else {
-      let plainSearch = text.toLowerCase().trim()
+      let plainSearch = text.toLowerCase().trim().split(' ').join('')
       let validSearch = items.filter(item => item.indexOf(plainSearch) !== -1)
       setSearch({
         search: text,
