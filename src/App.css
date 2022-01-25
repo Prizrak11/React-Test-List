@@ -28,3 +28,20 @@ li {
 	text-transform: capitalize;
 	padding-block: 0.2em;
 }
+
+details {
+	width: 100vw;
+	font-size: 1.5rem;
+	text-align: start;
+	background-color: #fff;
+	color: #282c34;
+	padding: 0.5em 1em;
+	cursor: pointer;
+}
+
+summary {
+	padding-bottom: 0.5em;
+}
+details > img {
+	width: 10%;
+}

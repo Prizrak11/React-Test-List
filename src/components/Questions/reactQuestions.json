@@ -1,0 +1,27 @@
+[
+	{
+		"question": "What is react?",
+		"answer": "Is a front-end javascript library developed by facebook in 2011",
+		"image": "https://upload.wikimedia.org/wikipedia/commons/thumb/4/47/React.svg/375px-React.svg.png"
+	},
+	{
+		"question": "What is the Virtual DOM?",
+		"answer": "A virtual DOM is a lightweight JavaScript object which originally is just a copy of the real DOM. It is a node tree that lists the elements, their attributes and content as Objects and their properties. React’s render function creates a node tree out of the React components. It then updates this tree in response to the mutations in the data model which is caused by various actions done by the user or by the system.",
+		"image": "https://d1jnx9ba8s6j9r.cloudfront.net/blog/wp-content/uploads/2017/08/1dom-528x193.png"
+	},
+	{
+		"question": "What is JSX?",
+		"answer": "JSX is a shorthand for JavaScript XML. This is a type of file used by React which utilizes the expressiveness of JavaScript along with HTML like template syntax. This makes the HTML file really easy to understand.",
+		"image": null
+	},
+	{
+		"question": "What is Props?",
+		"answer": "Props is the shorthand for Properties in React. They are read-only components which must be kept pure i.e. immutable. They are always passed down from the parent to the child components throughout the application.",
+		"image": null
+	},
+	{
+		"question": "What is React Router?",
+		"answer": "React Router is a powerful routing library built on top of React, which helps in adding new screens and flows to the application. This keeps the URL in sync with data that’s being displayed on the web page. It maintains a standardized structure and behavior and is used for developing single page web applications.",
+		"image": "https://seeklogo.com/images/R/react-router-logo-AB5BFB638F-seeklogo.com.png"
+	}
+]

@@ -1,10 +1,13 @@
 import './App.css'
-import List from './List.jsx'
+import Questions from './components/Questions/Questions'
+// import List from './components/List'
 
 function App() {
 
   return (
-    <List />
+    <div className="App">
+      <Questions />
+    </div>
   )
 }
 

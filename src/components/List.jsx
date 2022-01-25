@@ -1,4 +1,3 @@
-import './App.css'
 import { useState } from 'react'
 
 function List() {
@@ -20,16 +19,14 @@ function List() {
   }
 
   return (
-    <div className="App">
-      <div>
-        <h1>
-          🎉 Testing List with <code> React </code> 🎉
-        </h1>
-        <input type="text" value={search.search} onChange={lookForText} placeholder='Search' />
-        <ul>
-          {search?.match?.map(item => <li>{item}</li>) ?? items.map(item => <li>{item}</li>)}
-        </ul>
-      </div>
+    <div>
+      <h1>
+        🎉 Testing List with <code> React </code> 🎉
+      </h1>
+      <input type="text" value={search.search} onChange={lookForText} placeholder='Search' />
+      <ul>
+        {search?.match?.map(item => <li>{item}</li>) ?? items.map(item => <li>{item}</li>)}
+      </ul>
     </div>
   )
 }
