@@ -20,8 +20,16 @@ function List() {
     }
   }
 
+  const RenderListItem = ({ item }) => {
+    return (
+      <li className='text-2xl capitalize text-left py-2' >
+        {item}
+      </li>
+    )
+  }
+
   return (
-    <section className='grid place-items-center w-screen h-screen'>
+    <section className='grid place-items-center w-screen h-full mt-20'>
       <div className="bg-white rounded-xl p-10">
         <h1 className='text-4xl font-bold text-slate-500'>
           🎉 Testing List with <code className='underline' > React</code> 🎉
@@ -35,15 +43,11 @@ function List() {
         <ul>
           {
             existMatch
-              ? search.match.map(item =>
-                <li className='text-2xl capitalize text-left py-2' >
-                  {item}
-                </li>
+              ? search.match.map((item, id) =>
+                <RenderListItem item={item} key={id} />
               )
-              : items.map(item =>
-                <li className='text-2xl capitalize text-left py-2' >
-                  {item}
-                </li>
+              : items.map((item, id) =>
+                <RenderListItem item={item} key={id} />
               )
           }
         </ul>
