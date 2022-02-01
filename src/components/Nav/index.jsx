@@ -23,6 +23,10 @@ const Nav = () => {
           to="/list"
           className={navStyles}
         >List</NavLink>
+        <NavLink
+          to="/napster"
+          className={navStyles}
+        >Napster</NavLink>
       </div>
     </nav>
   )
