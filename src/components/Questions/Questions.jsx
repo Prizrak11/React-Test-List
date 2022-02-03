@@ -13,10 +13,9 @@ const Questions = () => {
               {question.question}
             </summary>
             <p>{question.answer}</p>
-            {question.image ?
-              <img className='w-[20%] mx-5 mt-5' src={question.image} alt='example' />
-              : ''
-            }
+            {question.image
+              ? <img className='w-[20%] mx-5 mt-5' src={question.image} alt='example' />
+              : ''}
           </details>
         )}
       </div>
