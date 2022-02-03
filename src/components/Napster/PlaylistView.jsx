@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom'
 import { useSong } from '../../hooks/useSong'
 import { useTracks } from '../../hooks/useTracks'
+import Loader from '../Loader/Loader'
 import TrackCard from './TrackCard'
 
 const PlaylistView = () => {
@@ -13,9 +14,9 @@ const PlaylistView = () => {
     description: desc
   } = currentPlaylist
 
-  if (isLoading) return 'Loading...'
+  if (isLoading) return <Loader />
   return (
-    <section className='grid place-items-center h-max mt-20'>
+    <section className='grid place-items-center h-max my-20'>
       <div className='bg-white p-10 rounded-xl w-[80%] text-center'>
         <h1 className='text-4xl font-bold text-slate-500'>{title}</h1>
         <p className='text-slate-500 mt-2'>{desc}</p>

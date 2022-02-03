@@ -1,12 +1,13 @@
 import { usePlaylists } from '../../hooks/usePlaylists'
+import Loader from '../Loader/Loader'
 import PlaylistCard from './PlaylistCard'
 
 const Napster = () => {
   const { playlists, isLoading } = usePlaylists()
 
-  if (isLoading) return 'Loading...'
+  if (isLoading) return <Loader />
   return (
-    <section className='grid place-items-center h-max mt-20'>
+    <section className='grid place-items-center h-max my-20'>
       <div className='bg-white p-10 rounded-xl w-[80%] text-center'>
         <h1 className='text-4xl font-bold text-slate-500'>
           🎶 Consumiendo API de Napster 🎶
