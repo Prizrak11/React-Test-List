@@ -17,7 +17,10 @@ const PlaylistCard = ({ playlist }) => {
   const cover = images[0].url
 
   return (
-    <div className='bg-white rounded-xl shadow-md w-full overflow-hidden text-left cursor-pointer hover:shadow-lg' onClick={() => openPlaylist(id)}>
+    <div
+      className='bg-white rounded-xl shadow-md w-full overflow-hidden text-left cursor-pointer hover:shadow-lg'
+      onClick={() => openPlaylist(id)}
+    >
       <div className='grid grid-cols-[1fr_3fr]'>
         <img className='w-full aspect-square object-cover rounded-l-xl' src={cover} alt={title} />
         <div className='p-4 flex flex-col'>

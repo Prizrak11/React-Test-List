@@ -7,7 +7,7 @@ import TrackCard from './TrackCard'
 const PlaylistView = () => {
   const { playlistId } = useParams()
   const { currentPlaylist, isLoading, tracks } = useTracks(playlistId)
-  const { toggleSong, currentTrack } = useSong()
+  const { toggleSong, currentTrack } = useSong(tracks)
 
   const {
     name: title,

@@ -17,15 +17,14 @@ export const useTracks = (id, limit = 10) => {
 
   const changeCurrentPlaylist = async () => {
     return new Promise(resolve => {
-      let playlist
       if (allPlaylists.length > 0) {
-        playlist = allPlaylists.filter(list => list.id === id)[0]
+        const playlist = allPlaylists
+          .filter(list => list.id === id)[0]
         dispatch(changePlaylist(playlist))
         resolve(true)
       } else {
         getPlaylistWithId(id)
-          .then(list => {
-            playlist = list
+          .then(playlist => {
             dispatch(changePlaylist(playlist))
             resolve(true)
           })

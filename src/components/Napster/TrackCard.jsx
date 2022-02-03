@@ -20,7 +20,7 @@ const TrackCard = ({ track, toggleSong, currentTrack }) => {
 
   return (
     <li
-      className='bg-white w-full text-left cursor-pointer hover:bg-slate-50 grid grid-cols-[4rem_1fr_1fr] items-center p-4 gap-y-20'
+      className={`w-full text-left cursor-pointer grid grid-cols-[4rem_1fr_1fr] items-center p-4 gap-y-20 ${songPlaying ? 'bg-slate-100' : 'bg-white hover:bg-slate-50'}`}
       onClick={toggleSongState}
     >
       <p className='text-3xl'>
