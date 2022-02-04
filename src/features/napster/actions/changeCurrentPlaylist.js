@@ -1,5 +1,6 @@
 import { createAsyncThunk } from '@reduxjs/toolkit'
 import { getPlaylistWithId } from '../../../services/getPlaylistWithId'
+import { getTracks } from '../../../services/getTracks'
 
 export const changeCurrentPlaylist = createAsyncThunk(
   '@napster/changeCurrentPlaylist',
@@ -13,6 +14,11 @@ export const changeCurrentPlaylist = createAsyncThunk(
       newPlaylist = await getPlaylistWithId(id)
     }
 
-    return newPlaylist
+    const playlistTracks = await getTracks(newPlaylist.id)
+
+    return {
+      ...newPlaylist,
+      tracks: playlistTracks
+    }
   }
 )

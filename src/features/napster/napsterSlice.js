@@ -1,13 +1,13 @@
 import { createSlice } from '@reduxjs/toolkit'
 import { changeCurrentPlaylist } from './actions/changeCurrentPlaylist'
-import { changeTracks } from './actions/changeTracks'
 import { initializePlaylists } from './actions/initializePlaylists'
 
 const initialState = {
   playlists: [],
   isLoading: false,
-  tracks: [],
-  currentPlaylist: {}
+  currentPlaylist: {
+    tracks: []
+  }
 }
 
 export const napsterSlice = createSlice({
@@ -21,14 +21,11 @@ export const napsterSlice = createSlice({
       state.playlists = payload
       state.isLoading = false
     },
-    [changeCurrentPlaylist.fulfilled]: (state, { payload }) => {
-      state.currentPlaylist = payload
-    },
-    [changeTracks.pending]: (state) => {
+    [changeCurrentPlaylist.pending]: (state) => {
       state.isLoading = true
     },
-    [changeTracks.fulfilled]: (state, { payload }) => {
-      state.tracks = payload
+    [changeCurrentPlaylist.fulfilled]: (state, { payload }) => {
+      state.currentPlaylist = payload
       state.isLoading = false
     }
   }

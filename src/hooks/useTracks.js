@@ -1,23 +1,22 @@
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { changeTracks } from '../features/napster/actions/changeTracks'
+import { changeCurrentPlaylist } from '../features/napster/actions/changeCurrentPlaylist'
 
-export const useTracks = (id, limit) => {
+export const useTracks = (id) => {
   const {
-    tracks,
     isLoading,
     currentPlaylist
   } = useSelector(state => state.napster)
   const dispatch = useDispatch()
 
   useEffect(() => {
-    dispatch(changeTracks({ id, limit }))
+    dispatch(changeCurrentPlaylist({ id }))
     window.scrollTo(0, 0)
   }, [])
 
   return {
     currentPlaylist,
     isLoading,
-    tracks
+    tracks: currentPlaylist.tracks
   }
 }
