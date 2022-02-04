@@ -23,7 +23,6 @@ export const napsterSlice = createSlice({
     },
     [changeCurrentPlaylist.fulfilled]: (state, { payload }) => {
       state.currentPlaylist = payload
-      state.isLoading = false
     },
     [changeTracks.pending]: (state) => {
       state.isLoading = true
