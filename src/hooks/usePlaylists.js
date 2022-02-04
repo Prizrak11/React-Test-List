@@ -4,7 +4,7 @@ import { startLoading, stopLoading } from '../actions/changeLoading'
 import { initializePlaylists } from '../actions/initializePlaylists'
 
 export const usePlaylists = () => {
-  const state = useSelector(state => state.napster)
+  const { playlists, isLoading } = useSelector(state => state.napster)
   const dispatch = useDispatch()
 
   const getTopPlaylist = async () => {
@@ -18,7 +18,7 @@ export const usePlaylists = () => {
   }, [])
 
   return {
-    playlists: state.playlists,
-    isLoading: state.isLoading
+    playlists,
+    isLoading
   }
 }

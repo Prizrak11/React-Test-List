@@ -26,7 +26,7 @@ export const useTracks = (id, limit = 10) => {
   const setPlaylistTracks = async () => {
     dispatch(startLoading())
     await changeCurrentPlaylist()
-    await dispatch(changeTracks(id, limit))
+    await dispatch(changeTracks({ id }))
     dispatch(stopLoading())
   }
 

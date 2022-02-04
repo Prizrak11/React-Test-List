@@ -1,6 +1,6 @@
 import { getTracks } from '../services/getTracks'
 
-export const changeTracks = (id, limit) => {
+export const changeTracks = ({ id, limit = 20 }) => {
   return async dispatch => {
     const tracks = await getTracks(id, limit)
     dispatch({

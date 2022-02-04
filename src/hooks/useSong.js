@@ -15,11 +15,10 @@ export const useSong = (tracks) => {
 
   const changeSongParams = value => {
     const newUrl = new URL(window.location)
-    if (!value) {
-      newUrl.searchParams.delete('song')
-    } else {
-      newUrl.searchParams.set('song', value)
-    }
+    const params = newUrl.searchParams
+    if (value) params.set('song', value)
+    else params.delete('song')
+
     navigate(newUrl, { replace: true })
   }
 
@@ -28,11 +27,12 @@ export const useSong = (tracks) => {
       currentTrack.song.pause()
     }
     const newAudio = createAudio(newTrack)
+    const { song, id: songId } = newAudio
     setCurrentTrack(newAudio)
-    newAudio.song.volume = 0.3
-    newAudio.song.muted = false
-    newAudio.song.play()
-    changeSongParams(newAudio.id)
+    song.volume = 0.3
+    song.muted = false
+    song.play()
+    changeSongParams(songId)
   }
 
   const stopSong = () => {

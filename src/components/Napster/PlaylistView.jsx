@@ -9,10 +9,7 @@ const PlaylistView = () => {
   const { currentPlaylist, isLoading, tracks } = useTracks(playlistId)
   const { toggleSong, currentTrack } = useSong(tracks)
 
-  const {
-    name: title,
-    description: desc
-  } = currentPlaylist
+  const { name: title, description: desc } = currentPlaylist
 
   if (isLoading) return <Loader />
   return (
