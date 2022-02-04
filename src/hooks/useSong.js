@@ -29,10 +29,10 @@ export const useSong = (tracks) => {
     const newAudio = createAudio(newTrack)
     const { song, id: songId } = newAudio
     setCurrentTrack(newAudio)
+    changeSongParams(songId)
     song.volume = 0.3
     song.muted = false
     song.play()
-    changeSongParams(songId)
   }
 
   const stopSong = () => {

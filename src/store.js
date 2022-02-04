@@ -1,14 +1,8 @@
-import { applyMiddleware, combineReducers, createStore } from '@reduxjs/toolkit'
-import { composeWithDevTools } from 'redux-devtools-extension'
-import thunk from 'redux-thunk'
-import { napsterReducer } from './reducers/napsterReducer'
+import { configureStore } from '@reduxjs/toolkit'
+import { napsterReducer } from './features/napster/napsterSlice'
 
-const rootReducer = combineReducers({
-  napster: napsterReducer
+export const store = configureStore({
+  reducer: {
+    napster: napsterReducer
+  }
 })
-
-export const store = createStore(rootReducer,
-  composeWithDevTools(
-    applyMiddleware(thunk)
-  )
-)
