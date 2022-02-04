@@ -21,8 +21,7 @@ export const napsterReducer = (state = initialValues, action) => {
     case '@napster/initPlaylists':
       return {
         ...state,
-        playlists: payload,
-        isLoading: false
+        playlists: payload
       }
     case '@napster/changedTracks':
       return {

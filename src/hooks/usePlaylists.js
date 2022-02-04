@@ -1,18 +1,16 @@
 import { useEffect } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
-import { startLoading } from '../actions/changeLoading'
-import { getPlaylists } from '../services/getPlaylists'
+import { startLoading, stopLoading } from '../actions/changeLoading'
+import { initializePlaylists } from '../actions/initializePlaylists'
 
 export const usePlaylists = () => {
   const state = useSelector(state => state.napster)
   const dispatch = useDispatch()
 
-  const getTopPlaylist = () => {
+  const getTopPlaylist = async () => {
     dispatch(startLoading())
-    getPlaylists()
-      .then(playlists => {
-        dispatch({ type: '@napster/initPlaylists', payload: playlists })
-      })
+    await dispatch(initializePlaylists())
+    dispatch(stopLoading())
   }
 
   useEffect(() => {
