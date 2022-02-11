@@ -3,8 +3,6 @@ import { useNavigate } from 'react-router-dom'
 const PlaylistCard = ({ playlist }) => {
   const navigate = useNavigate()
 
-  const openPlaylist = id => navigate(`/napster/${id}`)
-
   const {
     name: title,
     images,
@@ -13,6 +11,8 @@ const PlaylistCard = ({ playlist }) => {
     favoriteCount,
     id
   } = playlist
+
+  const openPlaylist = id => navigate(`/napster/${id}`)
 
   const cover = images[0].url
 

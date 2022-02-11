@@ -1,0 +1,28 @@
+{
+  "compilerOptions": {
+    "baseUrl": "./src/",
+    "paths": {
+      "*": [
+        "./src"
+      ],
+      "components": [
+        "./src/components"
+      ],
+      "hooks": [
+        "./src/hooks/"
+      ],
+      "helpers": [
+        "./src/helpers"
+      ],
+      "services": [
+        "./src/services"
+      ],
+      "testing": [
+        "./src/testing"
+      ]
+    }
+  },
+  "include": [
+    "./src/"
+  ]
+}

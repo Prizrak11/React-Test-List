@@ -1,0 +1,108 @@
+{
+    "playlists": [
+        {
+            "type": "playlist",
+            "id": "pp.225974698",
+            "name": "New Music",
+            "modified": "2022-02-04T07:28:21.000Z",
+            "href": "https://api.napster.com/v2.1/playlists/pp.225974698",
+            "privacy": "public",
+            "images": [
+                {
+                    "type": "image",
+                    "id": "pp.225974698",
+                    "url": "http://direct.napster.com/imageserver/v2/playlists/pp.225974698/artists/images/230x153.jpg",
+                    "contentId": "pp.225974698",
+                    "width": 230,
+                    "height": 153,
+                    "isDefault": true,
+                    "version": 0,
+                    "imageType": "displayImage"
+                }
+            ],
+            "description": "New music",
+            "favoriteCount": 8554,
+            "freePlayCompliant": true,
+            "links": {
+                "members": {
+                    "ids": [
+                        "205D5C750C8A03D0E050960A39036947"
+                    ],
+                    "href": "https://api.napster.com/v2.1/members/205D5C750C8A03D0E050960A39036947"
+                },
+                "tracks": {
+                    "href": "https://api.napster.com/v2.1/playlists/pp.225974698/tracks"
+                },
+                "tags": {
+                    "ids": [
+                        "tag.152196495",
+                        "tag.152196420"
+                    ],
+                    "href": "https://api.napster.com/v2.1/tags/tag.152196495,tag.152196420"
+                },
+                "sampleArtists": {
+                    "ids": [
+                        "Art.268491907",
+                        "Art.3684",
+                        "Art.218418809",
+                        "Art.32558379"
+                    ],
+                    "href": "https://api.napster.com/v2.1/artists/Art.268491907,Art.3684,Art.218418809,Art.32558379"
+                }
+            }
+        },
+        {
+            "type": "playlist",
+            "id": "pp.214725454",
+            "name": "Trending Pop",
+            "modified": "2022-01-22T23:45:32.000Z",
+            "href": "https://api.napster.com/v2.1/playlists/pp.214725454",
+            "privacy": "public",
+            "images": [
+                {
+                    "type": "image",
+                    "id": "pp.214725454",
+                    "url": "http://direct.napster.com/imageserver/v2/playlists/pp.214725454/artists/images/230x153.jpg",
+                    "contentId": "pp.214725454",
+                    "width": 230,
+                    "height": 153,
+                    "isDefault": true,
+                    "version": 0,
+                    "imageType": "displayImage"
+                }
+            ],
+            "description": "\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\tHot and remixed new singles climbing the pop charts -- or about to.\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t\t\n\t\t\t\t\t\t\t\t\t",
+            "favoriteCount": 4620,
+            "freePlayCompliant": true,
+            "links": {
+                "members": {
+                    "ids": [
+                        "97B6912783C37062E043C0A87FBE7062"
+                    ],
+                    "href": "https://api.napster.com/v2.1/members/97B6912783C37062E043C0A87FBE7062"
+                },
+                "tracks": {
+                    "href": "https://api.napster.com/v2.1/playlists/pp.214725454/tracks"
+                },
+                "tags": {
+                    "ids": [
+                        "tag.152196420",
+                        "tag.152196431",
+                        "tag.156763213",
+                        "tag.152196495"
+                    ],
+                    "href": "https://api.napster.com/v2.1/tags/tag.152196420,tag.152196431,tag.156763213,tag.152196495"
+                },
+                "sampleArtists": {
+                    "ids": [
+                        "Art.44837525",
+                        "Art.69410617",
+                        "Art.2630",
+                        "Art.372755812"
+                    ],
+                    "href": "https://api.napster.com/v2.1/artists/Art.44837525,Art.69410617,Art.2630,Art.372755812"
+                }
+            }
+        }
+    ]
+}

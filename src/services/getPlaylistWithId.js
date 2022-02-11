@@ -1,4 +1,4 @@
-import { napsterApiCall } from '../helpers/callApi'
+import { napsterApiCall } from 'helpers/callApi'
 
 export const getPlaylistWithId = (playlistId) => {
   return new Promise((resolve, reject) => {

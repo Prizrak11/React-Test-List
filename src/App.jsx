@@ -1,9 +1,9 @@
 import { Route, Routes } from 'react-router-dom'
-import Questions from './components/Questions/Questions'
-import List from './components/List/List'
-import Nav from './components/Nav/Nav'
-import Napster from './components/Napster/Napster'
-import PlaylistView from './components/Napster/PlaylistView'
+import Questions from 'components/Questions/Questions'
+import List from 'components/List/List'
+import Nav from 'components/Nav/Nav'
+import Napster from 'components/Napster/Napster'
+import PlaylistView from 'components/Napster/PlaylistView'
 
 function App () {
   return (

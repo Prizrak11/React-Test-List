@@ -1,6 +1,6 @@
 import { useParams } from 'react-router-dom'
-import { useSong } from '../../hooks/useSong'
-import { useTracks } from '../../hooks/useTracks'
+import { useSong } from 'hooks/useSong'
+import { useTracks } from 'hooks/useTracks'
 import Loader from '../Loader/Loader'
 import TrackCard from './TrackCard'
 

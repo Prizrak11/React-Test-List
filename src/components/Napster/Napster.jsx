@@ -1,4 +1,4 @@
-import { usePlaylists } from '../../hooks/usePlaylists'
+import { usePlaylists } from 'hooks/usePlaylists'
 import Loader from '../Loader/Loader'
 import PlaylistCard from './PlaylistCard'
 

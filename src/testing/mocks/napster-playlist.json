@@ -1,0 +1,60 @@
+{
+    "playlists": [
+        {
+            "type": "playlist",
+            "id": "pp.225974698",
+            "name": "New Music",
+            "modified": "2022-02-04T07:28:21.000Z",
+            "href": "https://api.napster.com/v2.2/playlists/pp.225974698",
+            "trackCount": 58,
+            "privacy": "public",
+            "images": [
+                {
+                    "type": "image",
+                    "id": "pp.225974698",
+                    "url": "http://direct.napster.com/imageserver/v2/playlists/pp.225974698/artists/images/230x153.jpg",
+                    "contentId": "pp.225974698",
+                    "width": 230,
+                    "height": 153,
+                    "isDefault": true,
+                    "version": 0,
+                    "imageType": "displayImage"
+                }
+            ],
+            "description": "New music",
+            "favoriteCount": 8559,
+            "freePlayCompliant": true,
+            "links": {
+                "members": {
+                    "ids": [
+                        "205D5C750C8A03D0E050960A39036947"
+                    ],
+                    "href": "https://api.napster.com/v2.2/members/205D5C750C8A03D0E050960A39036947"
+                },
+                "tracks": {
+                    "href": "https://api.napster.com/v2.2/playlists/pp.225974698/tracks"
+                },
+                "tags": {
+                    "ids": [
+                        "tag.152196495",
+                        "tag.152196420"
+                    ],
+                    "href": "https://api.napster.com/v2.2/tags/tag.152196495,tag.152196420"
+                },
+                "sampleArtists": {
+                    "ids": [
+                        "art.268491907",
+                        "art.3684",
+                        "art.218418809",
+                        "art.32558379"
+                    ],
+                    "href": "https://api.napster.com/v2.2/artists/art.268491907,art.3684,art.218418809,art.32558379"
+                }
+            }
+        }
+    ],
+    "meta": {
+        "returnedCount": 1,
+        "totalCount": null
+    }
+}

@@ -10,28 +10,10 @@ const initialState = {
   }
 }
 
-// {
-//   [initializePlaylists.pending]: (state) => {
-//     state.isLoading = true
-//   },
-//     [initializePlaylists.fulfilled]: (state, { payload }) => {
-//       state.playlists = payload
-//       state.isLoading = false
-//     },
-//       [changeCurrentPlaylist.pending]: (state) => {
-//         state.isLoading = true
-//       },
-//         [changeCurrentPlaylist.fulfilled]: (state, { payload }) => {
-//           state.currentPlaylist = payload
-//           state.isLoading = false
-//         }
-// }
-
 export const napsterSlice = createSlice({
   name: '@napster',
   initialState,
   extraReducers: builder => {
-    console.log(builder)
     builder
       .addCase(initializePlaylists.pending, (state) => {
         state.isLoading = true
